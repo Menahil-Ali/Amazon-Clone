@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amazon</title>
+    <link
+      rel="icon"
+      href="data:image/png;base64,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"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="amazon.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="navbar">
+        <div id="image" class="border"></div>
+        <div class="border" id="lo">
+          <p id="loc1">Deliver To</p>
+          <div class="location">
+            <i class="fa-solid fa-location-dot"></i>
+            <p id="loc2"><b>Pakistan</b></p>
+          </div>
+        </div>
+        <div id="nav-search" class="border2">
+          <select class="search-select">
+            <option>All</option>
+          </select>
+          <input class="search-input" placeholder="  Search Amazon" />
+          <div id="search-icon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+        </div>
+        <div class="lang border" id="lang2">
+          <span class="image2"></span>
+          <div id="lang">
+            <span class="mar"><b>EN</b></span>
+            <i class="fa-solid fa-caret-down"></i>
+          </div>
+        </div>
+        <div id="sign" class="border">
+          <p id="hello">Hello, sign in</p>
+          <div id="fl">
+            <p id="acc"><b>Accounts and lists</b></p>
+            <i class="fa-solid fa-caret-down"></i>
+          </div>
+        </div>
+        <div class="border">
+          <p id="ret">Returns</p>
+          <p id="or"><b>& Orders</b></p>
+        </div>
+        <div id="cart" class="border">
+          <i id="car" class="fa-solid fa-cart-shopping"></i>
+          <p class="cart1"><b>Cart</b></p>
+        </div>
+      </div>
+      <div id="nav2">
+        <div id="menu" class="border3">
+          <i id="ic-left" class="fa-solid fa-bars"></i>
+          <p class="right border" id="left">All</p>
+        </div>
+        <p class="right border3">Today's Deals</p>
+        <p class="right border3">Customer Service</p>
+        <p class="right border3">Registry</p>
+        <p class="right border3">Gift Cards</p>
+        <p class="right border3">Sell</p>
+      </div>
+    </header>
+    <div id="image3"></div>
+    <div id="shop">
+      <div class="box1 box">
+        <div id="box-content1">
+          <h2>Gaming accessories</h2>
+          <div id="image-box1">
+            <div id="head" class="h">
+              <img
+                src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/June/Fuji_Quad_Headset_1x._SY116_CB667159060_.jpg"
+              />
+              <span>Headsets</span>
+            </div>
+            <div id="key" class="h">
+              <img
+                src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/June/Fuji_Quad_Keyboard_1x._SY116_CB667159063_.jpg"
+              />
+              <span>Keyboards</span>
+            </div>
+
+            <div id="mice" class="h">
+              <img
+                src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/June/Fuji_Quad_Mouse_1x._SY116_CB667159063_.jpg"
+              />
+              <span>Computer Mice</span>
+            </div>
+
+            <div id="chair" class="h">
+              <img
+                src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/June/Fuji_Quad_Chair_1x._SY116_CB667159060_.jpg"
+              />
+              <span>Chairs</span>
+            </div>
+          </div>
+          <p id="now">Shop now</p>
+        </div>
+      </div>
+      <div class="box2 box">
+        <div id="box-content2">
+          <h2>Player's paradise starts here</h2>
+          <div id="image-box2"></div>
+          <p>Shop now</p>
+        </div>
+      </div>
+      <div class="box3 box">
+        <div id="box-content3">
+          <h2>Creating business solutions</h2>
+          <div id="image-box3"></div>
+          <p>Shop now</p>
+        </div>
+      </div>
+      <div class="box4 box">
+        <div id="box-content4">
+          <h2>Shop activity trackers and smartwatches</h2>
+          <div id="image-box4"></div>
+          <p>Shop now</p>
+        </div>
+      </div>
+      <div class="box5 box">
+        <div id="box-content5">
+          <h2>Upgrade your office furniture</h2>
+          <div id="image-box5"></div>
+          <p>Shop now</p>
+        </div>
+      </div>
+      <div class="box6 box">
+        <div id="box-content6">
+          <h2>Makeup</h2>
+          <div id="image-box6"></div>
+          <p>Shop now</p>
+        </div>
+      </div>
+      <div class="box7 box">
+        <div id="box-content7">
+          <h2>Health & Personal Cares</h2>
+          <div id="image-box7"></div>
+          <p>Shop now</p>
+        </div>
+      </div>
+      <div class="box8 box">
+        <div id="box-content8">
+          <h2>Deals in PCs</h2>
+          <div id="image-box8"></div>
+          <p>Shop now</p>
+        </div>
+      </div>
+      <div class="box9 box">
+        <div id="box-content9">
+          <h2>Fashion & Apparel</h2>
+          <div id="image-box9"></div>
+          <p>Shop now</p>
+        </div>
+      </div>
+      <div class="box10 box">
+        <div id="box-content10">
+          <h2>Shop Furniture</h2>
+          <div id="image-box10"></div>
+          <p>Shop now</p>
+        </div>
+      </div>
+      <div class="box11 box">
+        <div id="box-content11">
+          <h2>Home Decor</h2>
+          <div id="image-box11"></div>
+          <p>Shop now</p>
+        </div>
+      </div>
+      <div class="box12 box">
+        <div id="box-content12">
+          <h2>Grocery</h2>
+          <div id="image-box12"></div>
+          <p>Shop now</p>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div id="foot1"><a href="#">Back to Top</a></div>
+      <div id="foot2">
+        <ul>
+          <p><b>Get to Know Us</b></p>
+          <a>Careers</a>
+          <a>Blog</a>
+          <a>About Amazon</a>
+          <a>Investor Relations</a>
+          <a>Amazon Devices</a>
+          <a>Amazon Science</a>
+        </ul>
+        <ul>
+          <p><b>Make Money with Us</b></p>
+          <a>Sell products on Amazon</a>
+          <a>Sell on Amazon Business</a>
+          <a>Sell apps on Amazon</a>
+          <a>Become an Affiliate</a>
+          <a>Advertise Your Products</a>
+          <a>Self-Publish with Us</a>
+          <a>Host an Amazon Hub</a>
+          <a>
+            <pre>
+› See More Make Money 
+with Us</pre
+            >
+          </a>
+        </ul>
+        <ul>
+          <p><b>Amazon Payment Products</b></p>
+          <a>Amazon Business Card</a>
+          <a>Shop with Points</a>
+          <a>Reload Your Balance</a>
+          <a>Amazon Currency Converter</a>
+        </ul>
+        <ul>
+          <p><b> Let Us Help You</b></p>
+          <a>
+            <pre>
+Amazon and COVID-
+19</pre
+            >
+          </a>
+          <a>Your Account</a>
+          <a>Your Orders</a>
+          <a>
+            <pre>
+Shipping Rates & 
+Policies</pre
+            >
+          </a>
+          <a>
+            <pre>
+Returns & 
+Replacements</pre
+            >
+          </a>
+          <a>
+            <pre>
+Manage Your 
+Content and Devices</pre
+            >
+          </a>
+          <a>Amazon Assistant</a>
+          <a>Help</a>
+        </ul>
+      </div>
+      <div id="foot3">
+        <div id="logob"></div>
+        <div id="en" class="en-b2">
+          <div id="trans">
+            <i class="fa-solid fa-globe"></i>
+            <p id="p-e">English</p>
+          </div>
+        </div>
+        <div id="en1" class="en-b">
+          <div id="trans1">
+            <i class="fa-solid fa-dollar-sign"></i>
+            <p id="p-e1">USD-U.S. Dollar</p>
+          </div>
+        </div>
+        <div id="en2" class="en-b">
+          <div id="trans1">
+            <div id="flag"></div>
+
+            <p id="p-e2">United States</p>
+          </div>
+        </div>
+      </div>
+      <div id="foot4">
+        <div id="pages">
+          <a>Conditions of Use</a>
+          <a>Privacy Notice</a>
+          <a>Your Ads Privacy Choices</a>
+        </div>
+        <div class="copyright">
+          © 1996-2024, Amazon.com, Inc. or its affiliates
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
